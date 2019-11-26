@@ -28,8 +28,7 @@ public class gameMaster : MonoBehaviour
     {
         resource1 = resource1 + 1;
         resource2 = resource2 + 2;
-        resource3 = resource3 + 3;
-        print (resource1);
+        //resource3 = resource3 + 3;
         SetCountText1();
         SetCountText2();
         SetCountText3();
