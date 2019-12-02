@@ -6,7 +6,7 @@ public class Resource1Add : MonoBehaviour
 {
     public GameObject GameMaster;
     private gameMaster gMScript;
-
+    private float timer;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +17,11 @@ public class Resource1Add : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gMScript.resource1 = gMScript.resource1 + 1;
+        timer += Time.deltaTime;
+        if (timer > 1)
+        {
+            gMScript.resource1 = gMScript.resource1 + 5;
+            timer = 0;
+        }
     }
 }

@@ -6,6 +6,7 @@ public class Resource3Add : MonoBehaviour
 {
     public GameObject GameMaster;
     private gameMaster gMScript;
+    private float timer;
     public bool BoostTrue;
 
 
@@ -19,10 +20,15 @@ public class Resource3Add : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        gMScript.resource3 = gMScript.resource3 + 1;
-        if(BoostTrue == true)
+        timer += Time.deltaTime;
+        if (timer > 1f)
         {
-            gMScript.resource3 = gMScript.resource3 + 100;
+            gMScript.resource3 = gMScript.resource3 + 10;
+            if (BoostTrue == true)
+            {
+                gMScript.resource3 = gMScript.resource3 + 100;
+            }
+            timer = 0;
         }
     }
 

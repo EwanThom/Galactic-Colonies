@@ -8,6 +8,7 @@ public class gameMaster : MonoBehaviour
     public int resource1;
     public int resource2;
     public int resource3;
+    private float timer;
 
     public Text resource1Text;
     public Text resource2Text;
@@ -16,22 +17,29 @@ public class gameMaster : MonoBehaviour
     void Start()
     {
         resource1 = 0;
-        resource2 = 0;
-        resource3 = 0;
+        resource2 = 200;
+        resource3 = 200;
         SetCountText1();
         SetCountText2();
         SetCountText3();
+        timer = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        resource1 = resource1 + 1;
-        resource2 = resource2 + 2;
-        //resource3 = resource3 + 3;
+        timer += Time.deltaTime;
         SetCountText1();
         SetCountText2();
         SetCountText3();
+        if (timer > 10)
+        {
+            resource1 = resource1 + 1;
+            resource2 = resource2 + 1;
+            resource3 = resource3 + 1;
+            timer = 0;
+        }
+
     }
 
     void SetCountText1()
