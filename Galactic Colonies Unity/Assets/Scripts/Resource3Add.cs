@@ -23,10 +23,10 @@ public class Resource3Add : MonoBehaviour
         timer += Time.deltaTime;
         if (timer > 1f)
         {
-            gMScript.resource3 = gMScript.resource3 + 10;
+            gMScript.resource3 = gMScript.resource3 + (10 * gMScript.popModAdd);
             if (BoostTrue == true)
             {
-                gMScript.resource3 = gMScript.resource3 + 100;
+                gMScript.resource3 = gMScript.resource3 + 10;
             }
             timer = 0;
         }

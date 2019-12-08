@@ -16,7 +16,7 @@ public class SellResource3 : MonoBehaviour
     {
         if (gMScript.resource3 >= 100)
         {
-            gMScript.resource1 = gMScript.resource1 + 20;
+            gMScript.resource1 = gMScript.resource1 + 200;
             gMScript.resource3 = gMScript.resource3 - 100;
         }
     }

@@ -20,7 +20,7 @@ public class Resource1Add : MonoBehaviour
         timer += Time.deltaTime;
         if (timer > 1)
         {
-            gMScript.resource1 = gMScript.resource1 + 5;
+            gMScript.resource1 = gMScript.resource1 + (5 * gMScript.popModAdd);
             timer = 0;
         }
     }
