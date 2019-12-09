@@ -921,7 +921,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &219652042
 GameObject:
   m_ObjectHideFlags: 0
@@ -3414,6 +3414,11 @@ PrefabInstance:
       propertyPath: levelSpawn
       value: 
       objectReference: {fileID: 1347018335}
+    - target: {fileID: 7137802975088049853, guid: 81890017b273aac4082a4579013846c5,
+        type: 3}
+      propertyPath: waitTime
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81890017b273aac4082a4579013846c5, type: 3}
 --- !u!1 &700355985
@@ -5711,7 +5716,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1347018336
 Transform:
   m_ObjectHideFlags: 0

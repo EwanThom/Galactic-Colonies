@@ -8,6 +8,7 @@ public class CameraDrag : MonoBehaviour
     private Vector3 dragOrigin;
 
 
+#if UNITY_EDITOR_WIN
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -23,6 +24,29 @@ public class CameraDrag : MonoBehaviour
 
         transform.Translate(move, Space.World);
     }
+#endif
 
+#if UNITY_ANDROID
+    void Update()
+    {
+        foreach (Touch touch in Input.touches)
+        {
+            Vector3 nPos;
+            if (touch.phase == TouchPhase.Began)
+            {
+                dragOrigin = new Vector3(touch.position.x, touch.position.y, 0);
+            }
+
+            if (touch.phase == TouchPhase.Moved)
+            {
+                nPos = new Vector3(touch.position.x, touch.position.y, 0);
+                Vector3 pos = Camera.main.ScreenToViewportPoint(nPos - dragOrigin);
+                Vector3 move = new Vector3(pos.x * dragSpeed, pos.y * dragSpeed, 0);
+
+                transform.Translate(move, Space.World);
+            }
+        }
+    }
+#endif
 
 }

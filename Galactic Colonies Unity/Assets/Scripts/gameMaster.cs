@@ -49,7 +49,7 @@ public class gameMaster : MonoBehaviour
         timer2 += Time.deltaTime;
         timer3 += Time.deltaTime;
         popMod = population / 100 * 5;
-        print(popMod);
+        //print(popMod);
 
         if(popMod < 1)
         {
