@@ -26,6 +26,7 @@ public class CameraDrag : MonoBehaviour
     }
 #endif
 
+ /*
 #if UNITY_ANDROID
     void Update()
     {
@@ -47,6 +48,6 @@ public class CameraDrag : MonoBehaviour
             }
         }
     }
-#endif
+#endif*/
 
 }
