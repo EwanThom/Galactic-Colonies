@@ -20,7 +20,8 @@ public class ClickDrag : MonoBehaviour
                 Vector3 mousePos;
                 mousePos = Input.mousePosition;
                 mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-                this.gameObject.transform.localPosition = new Vector3(mousePos.x, mousePos.y, 0);
+                this.gameObject.transform.localPosition = new Vector3(mousePos.x, mousePos.y, -10);
+                GetComponent<BoxCollider2D>().enabled = false;
             }
         }
     }
@@ -43,6 +44,7 @@ public class ClickDrag : MonoBehaviour
         isBeingHeld = false;
         canPickUp = false;
         print("mouse released");
+        GetComponent<BoxCollider2D>().enabled = true;
     }
 
 
