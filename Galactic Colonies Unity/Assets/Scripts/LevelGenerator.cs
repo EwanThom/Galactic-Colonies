@@ -16,6 +16,8 @@ public class LevelGenerator : MonoBehaviour
     public float chanceRight;
     public float chanceDown;
     public GameObject levelSpawn;
+    public GameObject UISpawn;
+    public GameObject LoadScreen;
 
     public float minY = 9999999;
     public float maxY = 0;
@@ -116,6 +118,7 @@ public class LevelGenerator : MonoBehaviour
         CreateWallValues();
         CreateWalls();
         levelSpawn.SetActive(true);
+        UISpawn.SetActive(true);
     }
 
     void CreateWallValues()

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9194810468687986616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5485384265588334541}
+  - component: {fileID: 5132622644807694356}
+  m_Layer: 0
+  m_Name: 'Level3Gen '
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5485384265588334541
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9194810468687986616}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5132622644807694356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9194810468687986616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c44ea76000c802489ec3382115462af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiles:
+  - {fileID: 6541290817970093443, guid: 260b364a3ae6994449300bc5d484170e, type: 3}
+  - {fileID: 1962378568570302909, guid: 753e321a5fb9c164c938eef2543a5ac8, type: 3}
+  - {fileID: 1962378568570302909, guid: 753e321a5fb9c164c938eef2543a5ac8, type: 3}
+  - {fileID: 1962378568570302909, guid: 753e321a5fb9c164c938eef2543a5ac8, type: 3}
+  - {fileID: 7723067869887508828, guid: 493fc7667f7abe948b158bca0a39fcbd, type: 3}
+  - {fileID: 6541290817970093443, guid: 260b364a3ae6994449300bc5d484170e, type: 3}
+  - {fileID: 6541290817970093443, guid: 260b364a3ae6994449300bc5d484170e, type: 3}
+  - {fileID: 6541290817970093443, guid: 260b364a3ae6994449300bc5d484170e, type: 3}
+  - {fileID: 6541290817970093443, guid: 260b364a3ae6994449300bc5d484170e, type: 3}
+  - {fileID: 6541290817970093443, guid: 260b364a3ae6994449300bc5d484170e, type: 3}
+  - {fileID: 6541290817970093443, guid: 260b364a3ae6994449300bc5d484170e, type: 3}
+  - {fileID: 6541290817970093443, guid: 260b364a3ae6994449300bc5d484170e, type: 3}
+  - {fileID: 6541290817970093443, guid: 260b364a3ae6994449300bc5d484170e, type: 3}
+  - {fileID: 6541290817970093443, guid: 260b364a3ae6994449300bc5d484170e, type: 3}
+  - {fileID: 6541290817970093443, guid: 260b364a3ae6994449300bc5d484170e, type: 3}
+  wall: {fileID: 5874595829105617568, guid: 772af3cc81e812444bc31630f2c6218f, type: 3}
+  createdTiles: []
+  tileAmount: 300
+  tileSize: 32
+  waitTime: 0
+  LoadTime: 0
+  chanceUp: 0.25
+  chanceRight: 0.5
+  chanceDown: 0.75
+  levelSpawn: {fileID: 0}
+  minY: 9999999
+  maxY: 0
+  minX: 9999999
+  MaxX: 0
+  xAmount: 0
+  yAmount: 0
+  extraWallx: 50
+  extraWallY: 50

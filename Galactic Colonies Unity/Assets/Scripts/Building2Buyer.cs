@@ -34,7 +34,7 @@ public class Building2Buyer : MonoBehaviour
                 mousePos = Input.mousePosition;
                 mousePos = Camera.main.ScreenToWorldPoint(mousePos);
                 gMScript.resource1 = gMScript.resource1 - price;
-                GameObject.Instantiate(Building2, new Vector3(8, -1, 0), Quaternion.identity);
+                GameObject.Instantiate(Building2, new Vector3(8, -1, -10), Quaternion.identity);
                 price = price + (price / 100 * 10);
                 canBuy = false;
             }
