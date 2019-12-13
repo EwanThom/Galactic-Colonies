@@ -12,10 +12,10 @@ public class SelectMenuScr : MonoBehaviour
     }
     public void PlayGame2()
     {
-        SceneManager.LoadScene("Level2-Scene");
+        SceneManager.LoadScene("Leve2-Scene");
     }
     public void PlayGame3()
     {
-        SceneManager.LoadScene("Level3-Scene");
+        SceneManager.LoadScene("Level3Scene");
     }
 }
